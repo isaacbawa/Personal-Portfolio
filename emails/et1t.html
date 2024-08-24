@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Spotify Receipt</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&amp;display=swap"
+      rel="stylesheet">
+   <!--[if (gte mso 9)|(IE)]>
+		<style type="text/css">
+			body, div, table, td, span, a, p {font-family: Arial, Helvetica, sans-serif !important; }
+		</style>
+	<![endif]-->
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script type="text/javascript" async=""
+      src="chrome-extension://namibaeakmnknolcnomfdhklhkabkchl/chrome-popup/mixpanel-2-latest.min.js"></script>
+   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4R9RM4QM34"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'G-4R9RM4QM34');
+   </script>
+   <!-- End of Global site tag (gtag.js) - Google Analytics -->
+
+   <!-- Hotjar Tracking Code for https://delo.dev/ -->
+   <script>
+      (function (h, o, t, j, a, r) {
+         h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+         h._hjSettings = { hjid: 2968037, hjsv: 6 };
+         a = o.getElementsByTagName('head')[0];
+         r = o.createElement('script'); r.async = 1;
+         r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+         a.appendChild(r);
+      })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+   </script>
+   <script async="" src="https://static.hotjar.com/c/hotjar-2968037.js?sv=6"></script>
+   <!-- End of Hotjar Tracking Code -->
+
+   <style type="text/css">
+      /* CLIENT SPECIFIC STYLES */
+      body,
+      table,
+      td,
+      a {
+         -webkit-text-size-adjust: 100%;
+         -ms-text-size-adjust: 100%;
+      }
+
+      /* table,
+      td {
+         mso-table-lspace: 0pt;
+         mso-table-rspace: 0pt;
+      } */
+
+      img {
+         -ms-interpolation-mode: bicubic;
+      }
+
+      /* RESET STYLES */
+      img {
+         border: 0;
+         height: auto;
+         line-height: 100%;
+         outline: none;
+         text-decoration: none;
+      }
+
+      table {
+         border-collapse: collapse !important;
+      }
+
+      body {
+         height: 100% !important;
+         Margin: 0 !important;
+         padding: 0 !important;
+         width: 100% !important;
+      }
+
+      /* IOS BLUE LINKS */
+      a[x-apple-data-detectors] {
+         color: inherit !important;
+         text-decoration: none !important;
+         font-size: inherit !important;
+         font-family: inherit !important;
+         font-weight: inherit !important;
+         line-height: inherit !important;
+      }
+
+      /* GMAIL BLUE LINKS */
+      u+#body a {
+         color: inherit;
+         text-decoration: none;
+         font-size: inherit;
+         font-family: inherit;
+         font-weight: inherit;
+         line-height: inherit;
+      }
+
+      @media screen and (max-width: 600px) {
+         .responsive-table {
+            width: 100% !important;
+         }
+
+         #body {
+            background-color: #FFFFFF !important;
+         }
+
+         .logo {
+            width: 90px !important;
+            height: auto !important;
+         }
+
+         .header-container {
+            padding-top: 15px !important;
+         }
+
+         .mobile-header {
+            font-size: 20px !important;
+            line-height: 45px !important;
+         }
+
+         .small-logo {
+            width: 60px !important;
+            height: auto !important;
+         }
+
+         .mobile-space {
+            font-size: 5px !important;
+            line-height: 5px !important;
+            height: 5px !important;
+         }
+
+         .mobile-copy {
+            font-size: 12px !important;
+            line-height: 20px !important;
+         }
+
+         .mobile-footer {
+            font-size: 9px !important;
+            line-height: 18px !important;
+         }
+
+         .devices-links {
+            width: 75px !important;
+            border: none !important;
+         }
+
+         .links-mobile-container {
+            width: 100% !important;
+         }
+      }
+   </style>
+   <style></style>
+   <style id="LLPlatform">
+      #shadowLL,
+      #LLKeywordEnhancementsContainer {
+         position: fixed;
+         top: 0;
+         right: 0;
+         z-index: 999999999
+      }
+
+      #shadowLL {
+         direction: ltr
+      }
+
+      /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL1NoYWRvdy9wbGF0Zm9ybS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUlBLDBDQUNFLGNBQUEsQ0FDQSxLQUFBLENBQ0EsT0FBQSxDQUNBLGlCQUFBLENBS0YsVUFDRSxhQUFBIiwic291cmNlc0NvbnRlbnQiOlsiLy8gV2hlbiBkZWFsaW5nIHdpdGggc2xvd2VyIFNQQSBhbmQgc3RyYW5nZWx5IHN0eWxlZCBTUEFzIHRoZSBleHRlbnNpb24gcmVuZGVycyBmaXJzdCBhbmRcbi8vIHB1c2hlcyB0aGUgZW50aXJlIHBhZ2UgY29udGVudCBkb3duLiBGaXhpbmcgdGhlIExMIGV4dGVuc2lvbiB0byBiZSBmaXhlZCB0byB0aGUgdG9wIG9mXG4vLyB0aGUgcGFnZSBhbGxvd3MgaXQgdG8gZmxvYXQgZnJlZWx5LlxuLyogc3R5bGVsaW50LWRpc2FibGUgKi9cbiNzaGFkb3dMTCwgI0xMS2V5d29yZEVuaGFuY2VtZW50c0NvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAwO1xuICByaWdodDogMDtcbiAgei1pbmRleDogOTk5OTk5OTk5O1xufVxuXG4vLyBXZWJzaXRlcyB3aG9zZSBsYW5ndWFnZSByZWFkcyBmcm9tIHJpZ2h0IHRvIGxlZnQgb3ZlcnJpZGUgdGhlIGRpcmVjdGlvbiBvZiB0aGUgTEwgZXh0ZW5zaW9uLlxuLy8gVGhpcyBmb3JjZXMgaXQgYmFjayBmb3IgdGhlIGV4dGVuc2lvbiBvbmx5LlxuI3NoYWRvd0xMIHtcbiAgZGlyZWN0aW9uOiBsdHI7XG59XG4vKiBzdHlsZWxpbnQtZW5hYmxlICovXG4iXSwic291cmNlUm9vdCI6IiJ9 */
+   </style>
+</head>
+
+
+
+<body id="body"
+   style="Margin: 0 !important; padding: 0 !important; background-color: #FAFAFA; font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1; color: rgb(97, 100, 103);">
+   <div id="shadowLL">
+      <div></div>
+   </div>
+   <!-- START OF PREVIEW TEXT -->
+   <div style="display: none; max-height: 0; overflow: hidden;">
+      Spotify Receipt November 2021...
+   </div>
+   <div style="display: none; max-height: 0; overflow: hidden;">
+      &nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌
+   </div>
+   <!-- END OF PREVIEW TEXT -->
+
+   <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+      <tbody>
+         <tr>
+            <td style="padding-top: 30px; padding-bottom: 30px;">
+               <!-- START OF HTML EMAIL (600PX WIDE) -->
+               <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="600"
+                  style="background-color: #FFFFFF;" class="responsive-table">
+                  <!-- START OF LOGO -->
+                  <tbody>
+                     <tr>
+                        <td align="center" style="padding-top: 30px;">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%">
+                              <tbody>
+                                 <tr>
+                                    <td align="left">
+                                       <a href="https://spotify.com" target="_blank">
+                                          <img src="img/hero-tiny.png" alt="Hero image" width="122"
+                                             style="display: block; border: none;" class="logo">
+                                       </a>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF LOGO -->
+
+                     <!-- START OF HEADER -->
+                     <tr>
+                        <td align="center" style="padding-top: 30px;" class="header-container">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%">
+                              <tbody>
+                                 <tr>
+                                    <td align="center">
+                                       <h1 style="Margin: 0; color: rgb(85, 85, 85); font-family: 'Montserrat', sans-serif; font-size: 35px; font-weight: 600; line-height: 35px;"
+                                          class="mobile-header">
+                                          Enjoy Spotify Premium
+                                       </h1>
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td height="20"
+                                       style="line-height: 20px; font-size: 20px; font-family: Arial; mso-line-height-rule: exactly;"
+                                       class="mobile-space">
+                                       &nbsp;
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td align="center">
+                                       <p style="Margin: 0; color: rgb(97, 100, 103); 
+                              font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300; line-height: 14px;"
+                                          class="mobile-copy">
+                                          November 17, 2021
+                                       </p>
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td height="10"
+                                       style="line-height: 10px; font-size: 10px; font-family: Arial; mso-line-height-rule: exactly;"
+                                       class="mobile-space">
+                                       &nbsp;
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td align="center">
+                                       <p style="Margin: 0; color: rgb(97, 100, 103); 
+                              font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300; line-height: 14px;"
+                                          class="mobile-copy">
+                                          Order ID: 9324753028419327
+                                       </p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF HEADER -->
+
+                     <!-- START OF TRANSACTION FIRST ROW -->
+                     <tr>
+                        <td align="center" style="padding-top: 20px;">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%" style="background-color: #F7F7F7; border: 1px solid #E3E3E3;">
+                              <tbody>
+                                 <tr>
+                                    <td align="center">
+                                       <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                          role="presentation" width="92%">
+                                          <tbody>
+                                             <tr>
+                                                <td width="100" align="left" style="padding-top: 10px;">
+                                                   <p style="Margin: 0; color: rgb(97, 100, 103); 
+                                       font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: bold; line-height: 14px;"
+                                                      class="mobile-copy">
+                                                      Spotify Premium
+                                                   </p>
+                                                </td>
+
+                                                <td width="100" align="right" style="padding-top: 10px;">
+                                                   <p style="Margin: 0; color: rgb(97, 100, 103); 
+                                       font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300; line-height: 14px;"
+                                                      class="mobile-copy">
+                                                      $9.99
+                                                   </p>
+                                                </td>
+                                             </tr>
+
+                                             <tr>
+                                                <td align="left" style="padding: 5px 0px 10px 0px;">
+                                                   <p style="Margin: 0; color: rgb(97, 100, 103); 
+                                       font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300; line-height: 24px;"
+                                                      class="mobile-copy">
+                                                      1 month
+                                                   </p>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF TRANSACTION FIRST ROW -->
+
+                     <!-- START OF TRANSACTION SECOND ROW -->
+                     <tr>
+                        <td align="center">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%" style="background-color: #F7F7F7; border: 1px solid #E3E3E3;">
+                              <tbody>
+                                 <tr>
+                                    <td align="center">
+                                       <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                          role="presentation" width="92%">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left" style="padding: 10px 0px;">
+                                                   <p style="Margin: 0; color: rgb(97, 100, 103); 
+                                       font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: bold; line-height: 14px;"
+                                                      class="mobile-copy">
+                                                      Sales tax 6%
+                                                   </p>
+                                                </td>
+
+                                                <td width="100" align="right" style="padding: 10px 0px;">
+                                                   <p style="Margin: 0; color: rgb(97, 100, 103); 
+                                       font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300; line-height: 14px;"
+                                                      class="mobile-copy">
+                                                      $0.60
+                                                   </p>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF TRANSACTION SECOND ROW -->
+
+                     <!-- START OF TRANSACTION THIRD ROW -->
+                     <tr>
+                        <td align="center">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%" style="background-color: #F7F7F7; border: 1px solid #E3E3E3;">
+                              <tbody>
+                                 <tr>
+                                    <td align="center">
+                                       <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                          role="presentation" width="92%">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left" style="padding: 10px 0px;">
+                                                   <p style="Margin: 0; color: rgb(97, 100, 103); 
+                                       font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: bold; line-height: 14px;"
+                                                      class="mobile-copy">
+                                                      Total
+                                                   </p>
+                                                </td>
+
+                                                <td width="100" align="right" style="padding: 10px 0px;">
+                                                   <p style="Margin: 0; color: rgb(97, 100, 103); 
+                                       font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300; line-height: 14px;"
+                                                      class="mobile-copy">
+                                                      $10.59
+                                                   </p>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF TRANSACTION THIRD ROW -->
+
+                     <!-- START OF PAYMENT METHOD & USERNAME -->
+                     <tr>
+                        <td align="center">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%">
+                              <tbody>
+                                 <tr>
+                                    <td height="20"
+                                       style="line-height: 20px; font-size: 20px; font-family: Arial; mso-line-height-rule: exactly;">
+                                       &nbsp;
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td align="center">
+                                       <p style="Margin: 0; color: rgb(97, 100, 103); 
+                              font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; line-height: 14px;"
+                                          class="mobile-copy">
+                                          Payment Method
+                                       </p>
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td height="10"
+                                       style="line-height: 10px; font-size: 10px; font-family: Arial; mso-line-height-rule: exactly;"
+                                       class="mobile-space">
+                                       &nbsp;
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td align="center">
+                                       <p style="Margin: 0; color: rgb(97, 100, 103); 
+                              font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300; line-height: 14px;"
+                                          class="mobile-copy">
+                                          Card (#### #### #### 1234)
+                                       </p>
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td height="20"
+                                       style="line-height: 20px; font-size: 20px; font-family: Arial; mso-line-height-rule: exactly;">
+                                       &nbsp;
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td align="center">
+                                       <p style="Margin: 0; color: rgb(97, 100, 103); 
+                              font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 600; line-height: 14px;"
+                                          class="mobile-copy">
+                                          Username
+                                       </p>
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td height="10"
+                                       style="line-height: 10px; font-size: 10px; font-family: Arial; mso-line-height-rule: exactly;"
+                                       class="mobile-space">
+                                       &nbsp;
+                                    </td>
+                                 </tr>
+
+                                 <tr>
+                                    <td align="center">
+                                       <p style="Margin: 0; color: rgb(97, 100, 103); 
+                              font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300; line-height: 14px;"
+                                          class="mobile-copy">
+                                          johndoe
+                                       </p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF PAYMENT METHOD & USERNAME -->
+
+                     <!-- START OF AUTHORIZATION PARAGRAPH -->
+                     <tr>
+                        <td align="center" style="padding-top: 25px;">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%">
+                              <tbody>
+                                 <tr>
+                                    <td align="center">
+                                       <p style="Margin: 0; color: rgb(97, 100, 103); 
+                              font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 300; line-height: 24px;"
+                                          class="mobile-copy">
+                                          You have authorized Spotify to automatically charge you the above price each
+                                          month until you cancel. If the price changes, we’ll notify you beforehand. You
+                                          can check your renewal date or cancel at any time on your account page
+                                          following the instructions <a class="mobile-copy"
+                                             style="color: #1255CC; 
+                                 font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 300; line-height: 24px;" href="https://spotify.com"
+                                             target="_blank"> here.</a> No partial refunds. Terms and Conditions apply.
+                                          Important information for residents in the State of Alabama <a
+                                             class="mobile-copy"
+                                             style="color: #1255CC; font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 300; line-height: 24px;"
+                                             href="https://spotify.com" target="_blank"> here.</a>
+                                       </p>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF AUTHORIZATION PARAGRAPH -->
+
+                     <!-- START OF FOOTER LOGO -->
+                     <tr>
+                        <td align="center" style="padding-top: 30px;">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%" style="background-color: #F7F7F7;">
+                              <tbody>
+                                 <tr>
+                                    <td align="center">
+                                       <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                          role="presentation" width="92%">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left" style="padding: 10px 0px;">
+                                                   <img src="img/hero-small.png" alt="Hero small image" width="77"
+                                                      style="display: block; border: none;" class="small-logo">
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF FOOTER LOGO -->
+
+                     <!-- START OF GET SPOTIFY FOR -->
+                     <tr>
+                        <td align="center">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%" style="background-color: #F7F7F7;">
+                              <tbody>
+                                 <tr>
+                                    <td align="center" style="padding-top: 5px;">
+                                       <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                          role="presentation" width="92%"
+                                          style="border-top: 1px solid #D1D5D9; border-bottom: 1px solid #D1D5D9;">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left">
+                                                   <table align="left" border="0" cellpadding="0" cellspacing="0"
+                                                      role="presentation" width="70%" class="links-mobile-container">
+                                                      <tbody>
+                                                         <tr>
+                                                            <td align="left" style="padding: 15px 0px;">
+                                                               <p style="Margin: 0; color: rgb(97, 100, 103); 
+                                                font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 300; line-height: 11px;"
+                                                                  class="mobile-footer devices-links">
+                                                                  Get Spotify for:
+                                                               </p>
+                                                            </td>
+
+                                                            <td align="left" style="padding: 15px 0px;">
+                                                               <a href="https://spotify.com" target="_blank"
+                                                                  style="Margin: 0; color: rgb(97, 100, 103); 
+                                                font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; line-height: 11px; text-decoration: none; border-right: 1px solid #D1D5D9; padding-right: 10px;"
+                                                                  class="mobile-footer devices-links">
+                                                                  iPhone
+                                                               </a>
+                                                            </td>
+
+                                                            <td align="left" style="padding: 15px 0px;">
+                                                               <a href="https://spotify.com" target="_blank"
+                                                                  style="Margin: 0; color: rgb(97, 100, 103); 
+                                                font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; line-height: 11px; text-decoration: none; border-right: 1px solid #D1D5D9; padding-right: 10px;"
+                                                                  class="mobile-footer devices-links">
+                                                                  iPad
+                                                               </a>
+                                                            </td>
+
+                                                            <td align="left" style="padding: 15px 0px;">
+                                                               <a href="https://spotify.com" target="_blank"
+                                                                  style="Margin: 0; color: rgb(97, 100, 103); 
+                                                font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; line-height: 11px; text-decoration: none; border-right: 1px solid #D1D5D9; padding-right: 10px;"
+                                                                  class="mobile-footer devices-links">
+                                                                  Android
+                                                               </a>
+                                                            </td>
+
+                                                            <td align="left" style="padding: 15px 0px;">
+                                                               <a href="https://spotify.com" target="_blank"
+                                                                  style="Margin: 0; color: rgb(97, 100, 103); 
+                                                font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; line-height: 11px; text-decoration: none; padding-right: 10px;"
+                                                                  class="mobile-footer devices-links">
+                                                                  Other
+                                                               </a>
+                                                            </td>
+                                                         </tr>
+                                                      </tbody>
+                                                   </table>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF GET SPOTIFY FOR -->
+
+                     <!-- START OF MESSAGE WAS SENT TO -->
+                     <tr>
+                        <td align="center">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%" style="background-color: #F7F7F7;">
+                              <tbody>
+                                 <tr>
+                                    <td align="center">
+                                       <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                          role="presentation" width="92%">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left" style="padding: 15px 0px;">
+                                                   <p style="Margin: 0; color: rgb(97, 100, 103); 
+                                       font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 300; line-height: 17px;"
+                                                      class="mobile-footer">
+                                                      This message was sent to johndoe@gmail.com. If you have questions
+                                                      or complaints, please <a
+                                                         style="Margin: 0; color: rgb(97, 100, 103); 
+                                          font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; line-height: 17px; text-decoration: none;"
+                                                         href="https://spotify.com" target="_blank"
+                                                         class="mobile-footer">contact us.</a>
+                                                   </p>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF MESSAGE WAS SENT TO -->
+
+                     <!-- START OF ADDRESS -->
+                     <tr>
+                        <td align="center">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="80%" style="background-color: #F7F7F7;">
+                              <tbody>
+                                 <tr>
+                                    <td align="center">
+                                       <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                          role="presentation" width="92%">
+                                          <tbody>
+                                             <tr>
+                                                <td align="left" style="padding-bottom: 20px;">
+                                                   <p style="Margin: 0; color: rgb(97, 100, 103); 
+                                       font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 300; line-height: 17px;"
+                                                      class="mobile-footer">
+                                                      Spotify USA Inc., c/o RL&amp;F Service Corp., One Rodney Square,
+                                                      10th floor, Tenth and King streets, Wilmington, New Castle
+                                                      Country, Delaware 19801, USA
+                                                   </p>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- END OF ADDRESS -->
+
+                     <!-- PADDING BOTTOM -->
+                     <tr>
+                        <td align="center" style="padding-top: 10px;">
+                           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                              width="95%">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       &nbsp;
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </td>
+                     </tr>
+                     <!-- PADDING BOTTOM -->
+                  </tbody>
+               </table>
+               <!-- END OF HTML EMAIL (600PX WIDE) -->
+            </td>
+         </tr>
+      </tbody>
+   </table>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+/* Menu */
+
+.bawa-menu {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.bawa-menu-color {
+    color: #F75022;
+}
+
+/* Skills Section */
+
+.bawa-about-icon {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 8px;
+}
+
+.bawa-twitter-icon {
+    width: 30px;
+}
+
+.bawa-linkedin-icon {
+    width: 30px;
+}

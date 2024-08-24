@@ -1,0 +1,200 @@
+<mjml>
+  <mj-head>
+    <mj-title>Adroit Bureau </mj-title>
+    <mj-breakpoint width="400px" />
+  </mj-head>
+  <mj-body background-color="black" padding-top="100px">
+
+    <!-- Logo Section -->
+    <mj-section background-color="#ffffff" padding="5px 20px" border="2px solid #f8f9fa">
+      <mj-column width="50%">
+        <mj-image align="left" width="160px" href="https://adroitbureau.com/" src="images/Adroit Logo for Website header 2.png" alt="Adroit Bureau Logo" />
+      </mj-column>
+      <mj-column width="50%" padding="20px">
+        <mj-text color="#ca2726" font-size="20px" font-weight="bold">
+          Innovative Software Solutions.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Banner Section -->
+    <mj-section padding="0" background-color="#e0f0ff" padding="0">
+      <mj-column width="100%" padding="0">
+        <mj-image href="https://adroitbureau.com/" src="images/onesoftware-banner-600x252.jpg" alt="Adroit Bureau Banner" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Introductory Text Section -->
+    <mj-section padding="0 25px" background-color="#e0f0ff">
+      <mj-column background-color="#ffffff" border-radius="0 0 100px 100px">
+        <mj-text align="center" font-size="22px" font-weight="bold" color="#333333" padding-bottom="10px">
+          Are you ready to elevate your business operations to the next level?
+        </mj-text>
+        <mj-text align="center" font-size="18px" color="#555555">
+          At Adroit Bureau, we specialize in providing high-quality, reliable enterprise software tailored to meet your unique needs.
+        </mj-text>
+        <mj-button background-color="#b12120" color="#ffffff" font-size="16px" font-weight="bold" border-radius="50px" href="https://adroitbureau.com/" padding="20px" align="center">
+          Get Started
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Why Choose Adroit Bureau Section -->
+    <mj-section padding="20px" background-color="#e0f0ff">
+      <mj-column background-color="#ffffff" border-radius="0px 0px 100px 0px">
+        <mj-text align="center" font-size="22px" font-weight="bold" color="#333333" padding-bottom="10px">
+          Why Choose Adroit Bureau?
+        </mj-text>
+        <mj-text align="left" font-size="18px" color="#555555" css-class="text-content">
+          <ol style="padding-left: 20px; margin-top: 0;">
+            <li>
+              <p><strong>Expertise:</strong> With over a decade of experience, our team of certified professionals is dedicated to delivering top-notch software solutions.</p>
+            </li>
+            <li>
+              <p><strong>Comprehensive Solutions:</strong> From accounting and ERP systems to school management and CRM software, we offer a wide range of products designed to streamline your business processes.</p>
+            </li>
+            <li>
+              <p><strong>Customer Satisfaction:</strong> Our clients, including real estate agencies and educational institutions, have consistently praised our software for its reliability, ease of use, and exceptional support.</p>
+            </li>
+          </ol>
+        </mj-text>
+        <mj-button background-color="#b12120" color="#ffffff" font-size="16px" font-weight="bold" border-radius="50px" href="https://adroitbureau.com/" padding="20px" align="center">
+          View More
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Featured Products Section -->
+    <mj-section padding="20px" background-color="#e0f0ff">
+      <mj-column>
+        <mj-text font-size="24px" font-weight="bold" align="center" color="#333333">
+          Featured Products
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px" background-color="#e0f0ff" border="1px solid #e0f0ff">
+      <mj-column background-color="#fff" width="25%">
+        <mj-image height="201.59px" src="images/Adroit_ERP_519_517.jpg" alt="Adroit ERP" padding="0" />
+      </mj-column>
+      <mj-column background-color="#fff" width="75%">
+        <mj-text align="center" font-size="22px" font-weight="bold" color="#333333">
+          Adroit ERP
+        </mj-text>
+        <mj-text font-size="16px" color="#666666">
+          A complete solution to fit any organization. Adroit ERP utilizes the Adroit Enterprise Framework to customize solutions for any industry, preventing the need for multiple software solutions within an organization.
+        </mj-text>
+        <mj-button background-color="#b12120" color="#ffffff" font-weight="bold" href="https://adroitbureau.com/AdroitERP.html" padding="12px 25px" border-radius="5px">
+          Get the software
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px" background-color="#e0f0ff" border="1px solid #e0f0ff">
+      <mj-column background-color="#fff" width="25%">
+        <mj-image height="153.59px" src="images/Total_Accounting_519_457.jpg" alt="Total Accounting" padding="0" />
+      </mj-column>
+      <mj-column background-color="#fff" width="75%">
+        <mj-text align="center" font-size="22px" font-weight="bold" color="#333333">
+          Total Accounting
+        </mj-text>
+        <mj-text font-size="16px" color="#666666">
+          Our flagship product, designed to handle all your accounting needs with precision and ease.
+        </mj-text>
+        <mj-button background-color="#b12120" font-weight="bold" color="#ffffff" href="https://adroitbureau.com/TotalAccounting.html" padding="12px 25px" border-radius="5px">
+          Get the software
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px" background-color="#e0f0ff" border="1px solid #e0f0ff">
+      <mj-column background-color="#fff" width="25%">
+        <mj-image height="169.57px" src="images/Smart_Accouting_519_456.jpg" alt="Smart Accounting" padding="0" />
+      </mj-column>
+      <mj-column background-color="#fff" width="75%">
+        <mj-text align="center" font-size="22px" font-weight="bold" color="#333333">
+          Smart Accounting
+        </mj-text>
+        <mj-text font-size="16px" color="#666666">
+          Smart Accounting brings intelligence to your financial operations, simplifying your accounting tasks.
+        </mj-text>
+        <mj-button background-color="#b12120" font-weight="bold" color="#ffffff" href="https://adroitbureau.com/SmartAccounting.html" padding="12px 25px" border-radius="5px">
+          Get the software
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- What Our Clients Say Section -->
+    <mj-section padding="20px" background-color="#e0f0ff">
+      <mj-column>
+        <mj-text font-size="24px" font-weight="bold" align="center" color="#333333">
+          What Our Clients Say
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px" background-color="#ffffff" border="1px solid #e0e0e0">
+      <mj-column width="33%">
+        <mj-image width="100px" border-radius="50%" src="images/Frank_POSA_100_100.jpg" alt="Frank" padding="10px 0" />
+        <mj-text align="center" font-size="18px" font-weight="bold" color="#333333">
+          Frank
+        </mj-text>
+        <mj-text font-size="16px" color="#666666" align="center">
+          “Deciding to use Adroit School Software was the best choice we made.”
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="33%">
+        <mj-image width="100px" border-radius="50%" src="images/Samuel_Esquan_100_100.jpg" alt="Samuel" padding="10px 0" />
+        <mj-text align="center" font-size="18px" font-weight="bold" color="#333333">
+          Samuel
+        </mj-text>
+        <mj-text font-size="16px" color="#666666" align="center">
+          “Adroit Bureau Lite Accounting software is one of the best I have worked with.”
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="33%">
+        <mj-image width="100px" border-radius="50%" src="images/Beatrice_Gold_Coast_Homes_100_100.jpg" alt="Beatrice" padding="10px 0" />
+        <mj-text align="center" font-size="18px" font-weight="bold" color="#333333">
+          Beatrice
+        </mj-text>
+        <mj-text font-size="16px" color="#666666" align="center">
+          “I strongly recommend Adroit Bureau Software to all real estate agencies.”
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- Social Media Handles -->
+    <mj-section background-color="#e0f0ff" padding="20px 0">
+      <mj-column width="16%" vertical-align="middle">
+        <mj-image href="https://www.facebook.com/AdroitBureau" src="images/5296499_fb_facebook_facebook logo_icon.png" alt="Facebook" padding="0 10px" width="40px" />
+      </mj-column>
+      <mj-column width="16%" vertical-align="middle">
+        <mj-image href="https://www.instagram.com/p/CoCY-ukIDNk/" src="images/3225191_app_instagram_logo_media_popular_icon.png" alt="Instagram" padding="0 10px" width="40px" />
+      </mj-column>
+      <mj-column width="16%" vertical-align="middle">
+        <mj-image href="https://www.youtube.com/@onesoftware1471" src="images/3225180_app_logo_media_popular_social_icon.png" alt="YouTube" padding="0 10px" width="40px" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#ffffff" padding="20px 0">
+      <mj-column>
+        <mj-text font-size="14px" color="#555555" align="center">
+          If you don't want to receive emails from us anymore, you can <a href="#" style="text-decoration:none;">Unsubscribe</a> or manage your <a href="#" style="text-decoration:none;">Preferences</a>.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#ffffff" padding="10px 0">
+      <mj-column>
+        <mj-text align="center" font-size="16px" color="#000000">
+          Created with ❤️ by
+          <a href="www.linkedin.com/in/isaacbawangisah" style="color:#007BFF; text-decoration:none; font-weight:bold;">
+            Isaac Bawa Ngisah
+          </a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
