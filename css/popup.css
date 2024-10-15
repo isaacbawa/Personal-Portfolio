@@ -1,0 +1,31 @@
+.popup {
+    display: none;
+    position: absolute;
+    background-color: #33333310;
+    color: #F75022;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 5px solid #F75022;
+    font-size: 24px;
+    font-weight: bolder;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    /* Ensure it's above the button */
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
+    /* Non-interactive popup */
+    opacity: 0;
+}
+
+.popup::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Arrow will be at the bottom */
+    left: 20px;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #33333313 transparent transparent transparent;
+}
