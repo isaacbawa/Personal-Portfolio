@@ -32,7 +32,8 @@
     <link rel="stylesheet" type="text/css" href="css/plugins.css" />
     <link rel="stylesheet" type="text/css" href="css/dark.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/popup.css" />
     <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
     <!-- /STYLES -->
 
@@ -343,9 +344,10 @@ drift.load('8z6p65tpmpde');
                             <ul class="gallery_zoom grid">
                                 <li class="promotional grid-item">
                                     <div class="entry dizme_tm_portfolio_animation_wrap">
-                                        <a href="emails/jumia/index.html" target="_blank">
+                                        <a href="emails/jumia/index.html" target="_blank" class="popup_btn">
                                             <img src="img/email-imgs/jumia_em.png" alt="Thumb Icon" />
                                         </a>
+                                        <div class="popup">Click me</div>
                                     </div>
                                     <div class="mobile_title">
                                         <h3>Jumia</h3>
@@ -355,9 +357,10 @@ drift.load('8z6p65tpmpde');
 
                                 <li class="promotional grid-item">
                                     <div class="entry dizme_tm_portfolio_animation_wrap">
-                                        <a href="emails/Adroit Bureau Email Temp/index.html" target="_blank">
+                                        <a href="emails/Adroit Bureau Email Temp/index.html" target="_blank" class="popup_btn">
                                             <img src="img/email-imgs/adroit_em.png" alt="Thumb Icon" />
                                         </a>
+                                        <div class="popup">Click me</div>
                                     </div>
                                     <div class="mobile_title">
                                         <h3>Adroit Bureau</h3>
@@ -366,9 +369,10 @@ drift.load('8z6p65tpmpde');
                                 </li>
                                 <li class="transactional grid-item">
                                     <div class="entry dizme_tm_portfolio_animation_wrap">
-                                        <a href="emails/franko/franko.html" target="_blank">
+                                        <a href="emails/franko/franko.html" target="_blank" class="popup_btn">
                                             <img src="img/email-imgs/franko_em.png" alt="Thumb Icon" />
                                         </a>
+                                        <div class="popup">Click me</div>
                                     </div>
                                     <div class="mobile_title">
                                         <h3>Franko Trading</h3>
@@ -378,9 +382,10 @@ drift.load('8z6p65tpmpde');
 
                                 <li class="transactional grid-item">
                                     <div class="entry dizme_tm_portfolio_animation_wrap">
-                                        <a href="emails/bolt/index.html" target="_blank">
+                                        <a href="emails/bolt/index.html" target="_blank" class="popup_btn">
                                             <img src="img/email-imgs/bolt_em.png" alt="Thumb Icon" />
                                         </a>
+                                        <div class="popup">Click me</div>
                                     </div>
                                     <div class="mobile_title">
                                         <h3>Bolt</h3>
@@ -425,6 +430,36 @@ drift.load('8z6p65tpmpde');
     <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 <!--    <script src="js/plugins.js"></script> -->
 <!--    <script src="js/init.js"></script> -->
+
+        <!-- popup script -->
+    <script>
+        const buttons = document.querySelectorAll('.popup_btn');
+        const popups = document.querySelectorAll('.popup');
+
+        buttons.forEach((button, index) => {
+            const popup = popups[index]; // Match each button with its respective popup
+
+            button.addEventListener('mousemove', (e) => {
+                const rect = button.getBoundingClientRect();
+                const offsetX = e.clientX - rect.left;
+                const offsetY = e.clientY - rect.top;
+
+                // Position the popup at the mouse location with an offset to be slightly above the pointer
+                popup.style.left = `${offsetX}px`;
+                popup.style.top = `${offsetY - popup.offsetHeight + 300}px`; // Offset above the pointer
+            });
+
+            button.addEventListener('mouseenter', () => {
+                popup.style.display = 'block';
+                popup.style.opacity = '1';
+            });
+
+            button.addEventListener('mouseleave', () => {
+                popup.style.display = 'none';
+                popup.style.opacity = '0';
+            });
+        });
+    </script>
     <!-- /SCRIPTS -->
 
 </body>
