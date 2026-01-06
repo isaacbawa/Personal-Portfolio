@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    
+    <!-- Main Portfolio Page -->
+    <url>
+        <loc>https://isaacbawa.github.io/Personal-Portfolio/</loc>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Portfolio Section (anchor) -->
+    <url>
+        <loc>https://isaacbawa.github.io/Personal-Portfolio/#portfolio</loc>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Services Section (anchor) -->
+    <url>
+        <loc>https://isaacbawa.github.io/Personal-Portfolio/#services</loc>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Testimonials Section (anchor) -->
+    <url>
+        <loc>https://isaacbawa.github.io/Personal-Portfolio/#testimonials</loc>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Contact Section (anchor) -->
+    <url>
+        <loc>https://isaacbawa.github.io/Personal-Portfolio/#contact</loc>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Email Template Samples -->
+    <url>
+        <loc>https://isaacbawa.github.io/Personal-Portfolio/emails/franko/franko.html</loc>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://isaacbawa.github.io/Personal-Portfolio/emails/Adroit%20Bureau%20Email%20Temp/index.html</loc>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://isaacbawa.github.io/Personal-Portfolio/emails/jumia/index.html</loc>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://isaacbawa.github.io/Personal-Portfolio/emails/bolt/index.html</loc>
+        <lastmod>2026-01-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+</urlset>

@@ -1,0 +1,45 @@
+# robots.txt for Isaac Bawa Ngisah Portfolio
+# https://isaacbawa.github.io/Personal-Portfolio/
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Allow AI crawlers for GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Disallow admin/private directories (if any)
+Disallow: /private/
+Disallow: /admin/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://isaacbawa.github.io/Personal-Portfolio/sitemap.xml
+
+# Crawl-delay for polite crawling (optional)
+Crawl-delay: 1
+
+# Host directive
+Host: https://isaacbawa.github.io

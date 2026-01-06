@@ -26,3 +26,677 @@
 .bawa-linkedin-icon {
     width: 30px;
 }
+
+/* ==========================================
+   HERO SECTION ENHANCEMENTS
+   ========================================== */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .dizme_tm_button {
+    margin: 0;
+}
+
+.hero-buttons .secondary-btn a {
+    background: transparent !important;
+    border: 2px solid #F75022;
+    color: #F75022 !important;
+}
+
+.hero-buttons .secondary-btn a:hover {
+    background: #F75022 !important;
+    color: #fff !important;
+}
+
+.dizme_tm_hero .name h3 {
+    font-size: 38px;
+    line-height: 1.3;
+}
+
+/* ==========================================
+   SECTION COMMON STYLES
+   ========================================== */
+
+.section-subtitle {
+    display: inline-block;
+    color: #F75022;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    max-width: 600px;
+    margin: 15px auto 0;
+    color: #6f6b80;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   SERVICES SECTION
+   ========================================== */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 35px 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(247, 80, 34, 0.15);
+    border-color: #F75022;
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #F75022 0%, #ff7a50 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.service-icon svg {
+    color: #fff;
+    width: 32px;
+    height: 32px;
+}
+
+.service-card h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.service-card>p {
+    color: #6f6b80;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-features li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.service-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #F75022;
+    font-weight: 700;
+}
+
+/* Tools Section */
+.tools-section {
+    margin-top: 70px;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+    border-radius: 20px;
+    border: 1px solid #eee;
+}
+
+.tools-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.tools-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.tool-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tool-item img {
+    height: 45px;
+    width: auto;
+    max-width: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.tool-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.tool-item span {
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+}
+
+.klaviyo-tool svg {
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.klaviyo-tool:hover svg {
+    opacity: 1;
+}
+
+/* ==========================================
+   CASE STUDIES / PORTFOLIO SECTION
+   ========================================== */
+
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.case-study-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.case-study-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.case-study-image {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+}
+
+.case-study-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.case-study-card:hover .case-study-image img {
+    transform: scale(1.05);
+}
+
+.case-study-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(247, 80, 34, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.case-study-card:hover .case-study-overlay {
+    opacity: 1;
+}
+
+.case-study-overlay span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 25px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.case-study-content {
+    padding: 30px;
+}
+
+.case-study-type {
+    display: inline-block;
+    background: linear-gradient(135deg, #F75022 0%, #ff7a50 100%);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.case-study-content h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.case-study-period {
+    display: inline-block;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.case-study-details {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.detail-item {
+    margin-bottom: 18px;
+}
+
+.detail-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #F75022;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.detail-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievements-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.achievements-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #F75022;
+    font-weight: 700;
+}
+
+.additional-stats {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
+}
+
+.results-metrics {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.metric {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.metric-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F75022;
+}
+
+.metric-label {
+    display: block;
+    font-size: 11px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+
+/* ==========================================
+   TESTIMONIALS SECTION
+   ========================================== */
+
+.dizme_tm_testimonials {
+    padding: 100px 0;
+    background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-quote {
+    margin-bottom: 20px;
+}
+
+.testimonial-quote svg {
+    color: #F75022;
+    opacity: 0.3;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #F75022 0%, #ff7a50 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author-avatar span {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.author-info h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin: 0 0 3px 0;
+}
+
+.author-info span {
+    font-size: 13px;
+    color: #888;
+}
+
+/* ==========================================
+   CONTACT CTA SECTION
+   ========================================== */
+
+.dizme_tm_contact {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+}
+
+.contact-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-content .section-subtitle {
+    color: #F75022;
+}
+
+.contact-content h3 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.contact-content>p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(247, 80, 34, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon svg {
+    color: #F75022;
+    width: 22px;
+    height: 22px;
+}
+
+.contact-label {
+    display: block;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+.contact-value {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-value:hover {
+    color: #F75022;
+}
+
+.contact-cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 35px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button.primary {
+    background: linear-gradient(135deg, #F75022 0%, #ff7a50 100%);
+    color: #fff;
+}
+
+.cta-button.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(247, 80, 34, 0.4);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-button.secondary:hover {
+    border-color: #F75022;
+    color: #F75022;
+}
+
+.cta-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 991px) {
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dizme_tm_hero .name h3 {
+        font-size: 30px;
+    }
+
+    .contact-content h3 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-methods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-cta-buttons {
+        flex-direction: column;
+    }
+
+    .tools-grid {
+        gap: 25px;
+    }
+
+    .results-metrics {
+        flex-direction: column;
+    }
+
+    .metric {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .dizme_tm_hero .name h3 {
+        font-size: 24px;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    .contact-content h3 {
+        font-size: 26px;
+    }
+
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+}

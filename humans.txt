@@ -1,0 +1,28 @@
+/* TEAM */
+Name: Isaac Bawa Ngisah
+Role: Email Marketing & Development Specialist
+Site: https://isaacbawa.github.io/Personal-Portfolio/
+Email: bawa@intentora.com
+Twitter: @isaacbawan
+LinkedIn: linkedin.com/in/isaacbawangisah
+Location: Ghana
+
+/* SITE */
+Last update: 2026/01/06
+Language: English
+Doctype: HTML5
+Standards: HTML5, CSS3, JavaScript
+Components: MJML, Responsive Design
+Software: VS Code, Figma, Photoshop
+
+/* EXPERTISE */
+Email Marketing Platforms: Klaviyo, HubSpot, Mailchimp, Sender, Marketo
+Development: HTML, CSS, MJML, AMPscript
+Specialties: Welcome Sequences, Abandoned Cart Emails, Newsletter Design, Email Automation, A/B Testing, Campaign Optimization
+
+/* ACHIEVEMENTS */
+- 200+ email campaigns executed
+- 150+ responsive email templates designed
+- 50,000+ contacts managed
+- 25% average ROI improvement
+- 98% positive rendering rate across email clients
